@@ -3,13 +3,13 @@ const router = Router();
 const axios = require("axios");
 require('dotenv').config();
 
+const data = [
+    {url: process.env.CALL_PHONE},
+    {url: process.env.CALL_COMP},
+    {url: process.env.CALL_CAM}
+];
 
 router.get("/", async (req, res, next) => {
-    const data = [
-        {url: process.env.CALL_PHONE},
-        {url: process.env.CALL_COMP},
-        {url: process.env.CALL_CAM}
-    ];
     try {
       let callPhones = await axios.get(data[0].url);
       let callComputing = await axios.get(data[1].url);
@@ -20,6 +20,8 @@ router.get("/", async (req, res, next) => {
         next(error)
     }
   });
+
+ 
 
 
 module.exports = router;
