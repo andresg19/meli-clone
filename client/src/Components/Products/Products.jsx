@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router";
+import { detailProduct } from "../../Redux/Actions";
+
 
 
 const Products = ({products}) => {
+  const [isHide, setIsHide] = useState(true);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [visibleProducts, setVisibleProducts] = useState(0);
-  console.log(visibleProducts)
   let renderProducts = products.slice(visibleProducts, visibleProducts + 5);
+ console.log(products)
 
+ useEffect(() => {
+  setTimeout(() => setIsHide(false), 6000);
+ },[]);
+ 
   const clickRight = () => {
     visibleProducts === 10 ? null : setVisibleProducts(visibleProducts + 5);
   }
@@ -14,12 +25,21 @@ const Products = ({products}) => {
     visibleProducts === 0 ? null : setVisibleProducts(visibleProducts - 5);
   }
 
+  const handleDetail = (e, id, category) => {
+    const payload = [id, category]
+    e.preventDefault();
+    dispatch(detailProduct(payload));
+    navigate(`/product-detail/${id}`)
+  }
+  
+  
 
   return (
     <div className='flex w-[80%] gap-x-4 h-[250px] group relative mx-auto'>
-    {products
+    {
+    products
         ? renderProducts.map((p) => (
-            <div className="grid  w-[110%] h-[40vh] group bg-white shadow-sm rounded-sm relative ease-in-out duration-500 group/item hover:min-h-[50vh] hover:cursor-pointer hover:shadow-md hover:shadow-[#19191952]" key={p.id}>
+            <div className="grid   w-full h-[40vh] group bg-white shadow-sm rounded-sm duration-500 ease-in-out group/item hover:min-h-[50vh] hover:cursor-pointer hover:shadow-md hover:shadow-[#19191952]" key={p.id} onClick={(e) => handleDetail(e, p.id, p.category_id)}>
               <div className="mt-2">
                 <img src={p.thumbnail} alt="" width={100} className="mx-auto" />
               </div>

@@ -1,1 +1,3 @@
 export const GET_PRODUCTS = "GET_PRODUCTS";
+export const DETAIL_PRODUCTS = "DETAIL_PRODUCTS";
+export const CLEAR_STATE = "CLEAR_STATE";
