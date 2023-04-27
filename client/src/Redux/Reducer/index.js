@@ -1,7 +1,10 @@
 import { GET_PRODUCTS } from "../Actions/ActionTypes";
 
 const initialState = {
-products: [],
+phones: [],
+computing: [],
+cameras: [],
+
 }
 
 export default function rootReducer(state = initialState, {type, payload}) {
@@ -9,7 +12,9 @@ export default function rootReducer(state = initialState, {type, payload}) {
         case GET_PRODUCTS:
             return {
                 ...state,
-                products: payload,
+                phones: payload[0],
+                computing: payload[1],
+                cameras: payload[2],
             };
         default:
             return state;

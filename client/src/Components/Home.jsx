@@ -1,8 +1,10 @@
 import React from "react";
 import Nav from "./Nav";
-import Products from "./Products";
 import Carousel from "./Carousel";
 import Payments from "./Payments";
+import Phones from "./Products/Phones";
+import Computing from "./Products/Computing";
+import Cameras from "./Products/Cameras";
 
 const Home = () => {
   return (
@@ -18,7 +20,9 @@ const Home = () => {
           <Payments />
         </section>
         <section>
-          <Products />
+          <Phones />
+          <Computing />
+          <Cameras />
         </section>
       </main>
     </div>
