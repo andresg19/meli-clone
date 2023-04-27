@@ -2,9 +2,9 @@ import React from 'react';
 
 const Nav = () => {
     return ( 
-        <nav className='bg-[#fff159] min-h-[15vh]'>
+        <nav className='bg-[#fff159] max-h-[18vh]'>
             <div className='flex w-[80%] justify-between mx-auto'>
-                <img src="./MercadoLibre.png" alt="img not found" className='w-[20%] h-15'/>
+                <img src="./MercadoLibre.png" alt="img not found" className='w-[15%] mt-[1%]'/> 
             <div className='w-[20%]'>
                 <input type="text" />
             </div>

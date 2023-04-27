@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        onHover: {
+          transform: 'translateY(0px)',
+          opacity: 1
+        }
+      }
+    },
   },
   plugins: [],
 }
