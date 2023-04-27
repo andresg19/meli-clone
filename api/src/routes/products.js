@@ -1,12 +1,14 @@
 const { Router } = require("express");
 const router = Router();
 const axios = require("axios");
+require('dotenv').config();
+
 
 router.get("/", async (req, res, next) => {
     const data = [
-        {url: 'https://api.mercadolibre.com/sites/MLA/search?category=MLA1055'},
-        {url: 'https://api.mercadolibre.com/sites/MLA/search?category=MLA1648'},
-        {url: 'https://api.mercadolibre.com/sites/MLA/search?category=MLA1039'}
+        {url: process.env.CALL_PHONE},
+        {url: process.env.CALL_COMP},
+        {url: process.env.CALL_CAM}
     ];
     try {
       let callPhones = await axios.get(data[0].url);
