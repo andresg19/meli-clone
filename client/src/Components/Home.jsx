@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
 import Carousel from "./Carousel";
 import Payments from "./Payments";
@@ -9,7 +9,9 @@ import Suscription from "./Suscription";
 import Benefits from "./Benefits";
 
 
+
 const Home = () => {
+
   return (
     <div>
       <header>

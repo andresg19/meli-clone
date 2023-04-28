@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Nav = () => {
+
+
     return ( 
         <nav className='grid bg-[#fff159] h-[18vh] border-b border-[#19191923]'>
             <div className='mt-2'>

@@ -4,7 +4,7 @@ import { GET_PRODUCTS } from "../Actions/ActionTypes";
 export const getProducts = (payload) => {
     return async function (dispatch) {
         try {
-            let result = await axios.get('http://localhost:3001/products');
+            let result = await axios.get('https://meli-clone-production.up.railway.app/products');
             return dispatch({
                 type: GET_PRODUCTS,
                 payload: result.data
