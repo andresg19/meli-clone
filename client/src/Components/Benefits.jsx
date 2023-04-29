@@ -2,7 +2,7 @@ import React from 'react';
 
 const Benefits = () => {
     return ( 
-        <div className="w-[80%] mx-auto mt-10">
+        <div className="w-[90%] mx-auto mt-10">
             <div className="flex items-center">
               <h1 className="text-[#1919199c]">Beneficios de Mercado Puntos</h1>
               <p className="text-[12px] ml-2 mt-1 text-[#61a0fb] hover:text-[#6175fb] hover:cursor-pointer">
