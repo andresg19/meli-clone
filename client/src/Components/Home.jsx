@@ -21,6 +21,7 @@ const Home = () => {
         <article>
           <Carousel />
         </article>
+      {/* </main> */}
         <section>
           <Payments />
         </section>
@@ -28,19 +29,19 @@ const Home = () => {
           <Phones />
           <Computing />
         </section>
-        <section>
+         <section>
           <Suscription />
         </section>
         <section>
           <Benefits />
         </section>
-        <Cameras />
+        <Cameras /> 
       </main>
       <footer>
         <div className="flex">
         <a href="https://www.linkedin.com/in/andres-germain-dev/" className="mt-10 underline mx-auto text-[#19191978]">Andrés Germain dev</a>
-        </div>
-      </footer>
+        </div> 
+       </footer>
     </div>
   );
 };

@@ -13,9 +13,9 @@ const Computing = () => {
   }, []);
 
   return (
-    <div className="grid mt-5">
-      <div className="flex items-center">
-      <h1 className="ml-[10%]  text-[#1919199c]">Relacionado con tus visitas en Computación</h1>
+    <div className="grid mt-10">
+      <div className="flex items-center ml-[15%]">
+      <h1 className=" w-[60%] text-[#1919199c]">Relacionado con tus visitas en Computación</h1>
       <p className='text-[12px] ml-2 mt-1 text-[#61a0fb] hover:text-[#6175fb] hover:cursor-pointer'>Ver historial</p>
       </div>
       <br />

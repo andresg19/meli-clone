@@ -15,8 +15,8 @@ const Phones = () => {
 
   return (
     <div className="grid mt-10">
-      <div className="flex items-center">
-      <h1 className="ml-[10%]  text-[#1919199c]">Basado en tu última visita</h1>
+      <div className="flex items-center mx-auto">
+      <h1 className=" text-[#1919199c]">Basado en tu última visita</h1>
       <p className='text-[12px] ml-2 mt-1 text-[#61a0fb] hover:text-[#6175fb] hover:cursor-pointer'>Ver historial</p>
       </div>
       <br />
