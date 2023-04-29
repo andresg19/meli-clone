@@ -2,7 +2,7 @@ import React from 'react';
 
 const Suscription = () => {
     return ( 
-        <div className="grid w-[90%] bg-white mx-auto rounded-md mt-10">
+        <div className="grid w-[90%] bg-white mx-auto rounded-md mt-10 lg:w-[80%]">
         <div className="flex h-[12vh] text-white bg-gradient-to-r from-[#a90f90] via-[#77137c] to-[#0e1a52] rounded-t-md items-center justify-between">
           <h1 className="ml-5">Suscribite al nivel 6</h1>
           <div className="flex mr-5">
@@ -18,7 +18,7 @@ const Suscription = () => {
             Conseguí los mejores beneficios en Mercado Libre
           </p>
         </div>
-        <div className="grid mt-5 text-[12px] w-[90%] mx-auto">
+        <div className="grid mt-5 text-[12px] w-[90%] mx-auto lg:flex">
           <div className="flex items-center w-[90%]">
             <img
               src="https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/widget-l6/dplus.svg"

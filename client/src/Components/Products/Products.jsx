@@ -10,7 +10,7 @@ const Products = ({products}) => {
 
   return (
 
-    <div className="grid grid-cols-2 gap-3 w-[100%] justify-between mx-auto mt-5">
+    <div className="grid grid-cols-2 gap-3 w-[100%] justify-between mx-auto mt-5 lg:grid-cols-5 lg:w-[80%]">
       {products
         ? products.map((p) => (
             <div className="grid w-[100%] h-auto bg-white shadow-sm rounded-sm relative group hover:shadow-md hover:shadow-[#19191939]" key={p.id}>
